@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('cart')">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="banner">
+                
+            </div>
+            <div class="products">
+                <h1 style="color: white;">Featured Products</h1>
+                <div class="product-list" id="featured-products">
+                    <!-- Featured Products will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="shop" style="display: none;">
+            <h1 style="color: white;">Shop</h1>
+
+            <div class="product-category">
+                <h2 style="color: white;">Sarees</h2>
+                <div class="product-list" id="sarees">
+                    <!-- Sarees will be injected here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 style="color: white;">Kurtis</h2>
+                <div class="product-list" id="kurtis">
+                    <!-- Kurtis will be injected here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 style="color: white;">Watches</h2>
+                <div class="product-list" id="watches">
+                    <!-- Watches will be injected here by JavaScript -->
+                </div>
+            </div>
+
+            <div class="product-category">
+                <h2 style="color: white;">Electronic Devices</h2>
+                <div class="product-list" id="electronics">
+                    <!-- Electronic Devices will be injected here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="cart" id="cart" style="display: none;">
+            <h2 style="color: rgb(135, 23, 23);">Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+            <button onclick="checkout()">Proceed to Checkout</button>
+        </section>
+
+        <section class="payment" id="payment" style="display: none;">
+            <h2 style="color: rgb(187, 73, 73);">Payment Page</h2>
+            <form id="payment-form">
+                <label for="UPI Id">UPI Id:</label><br>
+                <input type="text" id="UPI Id" name="UPI Id" required><br><br>
+                <label for="Bank Name">Bank Name:</label><br>
+                <input type="text" id="Bank Name" name="Bank Name" required><br><br>
+                <label for="E-mail">E-mail:</label><br>
+                <input type="text" id="E-mail" name="E-mail" required><br><br>
+                <button type="button" onclick="submitPayment()">Submit Payment</button>
+            </form>
+        </section>
+
+        <section class="contact" id="contact" style="display: none;">
+            <h2 >Contact Us</h2>
+            <p>Welcome to MyShop! We are dedicated to providing you with the highest quality products and excellent customer service. If you have any questions or need assistance, please feel free to reach out to us.</p>
+            <p><strong>Email:</strong> support@myshop.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p>At MyShop, we prioritize customer satisfaction and strive to deliver the best shopping experience possible. Our products are sourced from trusted suppliers and go through rigorous quality checks to ensure they meet our high standards.</p>
+            <p>We offer a carefully curated selection of [products/services], each chosen for its unique features and superior quality. Whether you’re looking for [specific items] or [other items], our collection is designed to meet your needs and exceed your expectations. Our goal is to make your shopping experience enjoyable and hassle-free with secure transactions, fast shipping, and top-notch customer support.</p>
+
+                <p>At MyShop, your satisfaction is our priority. We ensure all our products come from reputable suppliers and undergo stringent quality checks. Our dedicated customer service team is always ready to assist you with any questions or concerns. </p>
+                    <p>Thank you for choosing MyShop – we look forward to serving you! Stay connected through https.www.MyShop.com and sign up for our newsletter for updates and special offers.
+                
+                
+                
+                
+                
+                
+                </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyShop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
