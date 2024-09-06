@@ -1,4 +1,4 @@
-# brainwave-matrix-ecommerce
+
 📦 E-Commerce Website
 
 Welcome to MyShop, an online platform for discovering and purchasing a wide variety of products! Here's a brief overview of its features:
